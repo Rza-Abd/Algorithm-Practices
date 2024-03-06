@@ -14,13 +14,13 @@ def threeSumClosest(nums, target):
         lo = i+1
         hi = n-1
         while lo < hi:
-        current_sum = nums[i] + nums[lo] + nums[hi]
-        if abs(current_sum - target) < abs(best - target):
-            best = current_sum
-        if current_sum < target:
-            lo += 1  
-        else: 
-            hi -= 1
+            current_sum = nums[i] + nums[lo] + nums[hi]
+            if abs(current_sum - target) < abs(best - target):
+                best = current_sum
+            if current_sum < target:
+                lo += 1  
+            else: 
+                hi -= 1
 
     return best
 
